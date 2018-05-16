@@ -9,7 +9,7 @@ app.use(cors())
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-  res.send(data)
+  res.send({ data })
 })
 
 function filterById(data, id) {
